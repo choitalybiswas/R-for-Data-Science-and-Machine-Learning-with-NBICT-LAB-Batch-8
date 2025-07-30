@@ -1,0 +1,24 @@
+# Installing the visualize package
+# install.packages("visualize")
+library(visualize)
+
+# Visualize normal distribution
+pnorm(-1.96)
+visualize.norm(stat = -1.96)
+visualize.norm(stat = 1.96)
+visualize.norm(stat = 1.96, section = "upper")
+visualize.norm(stat = c(-1.96, 1.96), section = "bounded")
+visualize.norm(stat = c(-1.96, 1.96), section = "tails")
+
+visualize.norm(stat = c(-1.0, 1.0), section = "bounded")
+visualize.norm(stat = c(-3, 3), section = "bounded")
+visualize.norm(stat = c(-3, 3), section = "tails")
+
+pnorm(2)
+1-pnorm(2)
+
+visualize.norm(stat = 77, mu = 75, sd = 1, section = "upper")
+visualize.norm(stat = 77, mu = 75, sd = 1, section = "lower")
+
+pnorm(77, mean =75, sd = 1)
+1-pnorm(77, mean =75, sd = 1)
